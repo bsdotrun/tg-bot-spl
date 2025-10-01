@@ -1,0 +1,35 @@
+{
+  "name": "bullshit-telegram-bot",
+  "version": "1.0.0",
+  "description": "High-performance Solana trading bot for Telegram",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": ["telegram", "bot", "solana", "trading", "crypto"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.91.1",
+    "@solana/spl-token": "^0.4.1",
+    "@coral-xyz/anchor": "^0.30.1",
+    "telegraf": "^4.15.0",
+    "dotenv": "^16.3.1",
+    "bs58": "^5.0.0",
+    "axios": "^1.6.2",
+    "node-cache": "^5.1.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/bs58": "^4.0.4",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0"
+  }
+}
